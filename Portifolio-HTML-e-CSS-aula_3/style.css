@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');   /*pequei do site google fonts */
+
+* { /* tira a margem e o preenchimento dos elementos */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh; /* vh = viewport height, ou seja 100% da altura da minha tela */
+    box-sizing: border-box; /*o filho fica da mesma largura da propriedade pai, mesmo que o filho tenha uma borda, etc */
+    background-color: black;
+    color: #f6f6f6;
+}
+
+.titulo-destaque { /* . + nome para classes */
+    color: #22d4fd;
+}
+
+.apresentacao {
+    margin: 10% 15%; /*primeiro valor, eixo vertical, segundo valor, eixo horizontal */
+    display: flex;
+    align-items: center; /* alinha os itens conforme o elemento de maior altura, ou seja, pega o maior elemento, no caso a imagem, e os alinha conforme a mesma */
+    justify-content: space-between;
+}
+
+.apresentacao__conteudo {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /*espaço entre os itens */
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 36px;
+    font-family: 'Krona One', sans-serif;
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.apresentacao__links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.apresentacao__links__link {
+    background-color: #22D4FD;
+    width: 280px;
+    text-align: center; /*alinha o texto*/
+    border-radius: 16px;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 21.5px 0; /*primeiro valor, eixo vertical, segundo valor, eixo horizontal */
+    text-decoration: none; /*tira o sublinhado dos links */
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+}
