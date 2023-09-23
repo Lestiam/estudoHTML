@@ -6,7 +6,7 @@
 }
 
 body {
-    height: 100vh; /* vh = viewport height, ou seja 100% da altura da minha tela */
+    /*height: 100vh; /* vh = viewport height, ou seja 100% da altura da minha tela */
     box-sizing: border-box; /*o filho fica da mesma largura da propriedade pai, mesmo que o filho tenha uma borda, etc */
     background-color: black;
     color: #f6f6f6;
@@ -17,7 +17,7 @@ body {
 }
 
 .apresentacao {
-    margin: 10% 15%; /*primeiro valor, eixo vertical, segundo valor, eixo horizontal */
+    padding: 8% 15%; /*primeiro valor, eixo vertical, segundo valor, eixo horizontal */
     display: flex;
     align-items: center; /* alinha os itens conforme o elemento de maior altura, ou seja, pega o maior elemento, no caso a imagem, e os alinha conforme a mesma */
     justify-content: space-between;
@@ -74,4 +74,14 @@ body {
 .apresentacao__links__link:hover {
     background-color: #272727;
     scale: 1.1;
+}
+
+.rodape {
+    padding: 24px;
+    color: #000000;
+    background-color: #22D4FD;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
 }
